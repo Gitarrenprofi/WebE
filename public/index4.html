@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Web engineering</title>
+
+	<!-- include Google Feed API -->
+	<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/style.css">
+
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+	<script src="https://www.google.com/recaptcha/enterprise.js?render=6LdxeoomAAAAAAFVVgsN46IBHpN2NfgPZTGbXorP"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<ul class="menu">
+					<li><a href="index.html">Login</a></li>
+					<li><a href="index2" .html">Wetter</a></li>
+					<li><a href="index3.html">Unterschreiben</a></li>
+					<li class="active"><a href="index4.html">Kontakt</a></li>
+					<li><a href="index5.html">Rss</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<h1>PHP Kontaktformular mit Google reCAPTCHA Spamschutz</h1>
+		<!-- Fallback bei dektiviertem JavaScript im Browser -->
+		<noscript>
+			<span style="color: red;">Bitte JavaScript im Browser aktivieren!</span>
+		</noscript>
+		<form id="comment_form" action="auswertung.php" method="post">
+			Name<br>
+			<input type="text" name="name" required="required" placeholder="Name Bitte hier eingeben" size="40"><br><br>
+			e-Mail<br>
+			<input type="email" name="email" required="required" placeholder="e-Mail bitte hier eingeben" size="40"><br><br>
+			Nachricht<br>
+			<textarea name="comment" placeholder="Nachricht bitte hier eingeben" required="required" rows="8" cols="39"></textarea><br><br>
+			<div class="g-recaptcha" data-sitekey="6LdY04omAAAAAEkh36DPvXBJdRIchBEn63GxE0kp"></div><br>
+			<input type="submit" name="submit" value="Senden"><br><br>
+		</form>
+</body>
