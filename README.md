@@ -1,8 +1,11 @@
 # WebE
 
 Bearbeitete Punkte:
+
 Docker (1Punkt)
+
 DB(3Punkte)
+
 Vue.js(3Punkte)
 
 Installation:
